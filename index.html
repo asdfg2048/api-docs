@@ -12,6 +12,10 @@
         }
         ul {
             list-style-type: none;
+            padding-left: 20px;
+        }
+        li {
+            margin: 5px 0;
         }
         a {
             text-decoration: none;
@@ -23,46 +27,60 @@
         .tree {
             margin-left: 20px;
         }
+        .folder::before {
+            content: '📁 ';
+            font-size: 1.2em;
+        }
+        .file::before {
+            content: '📄 ';
+            font-size: 1.2em;
+        }
     </style>
 </head>
 <body>
     <h1>Documentação da API Workzen</h1>
 
     <ul>
-        <li>Documentação da API Workzen.html
+        <li class="folder">Documentação da API Workzen
             <ul class="tree">
-                <li><a href="Esquema de aplicação.html">Esquema de aplicação.html</a></li>
-                <li><a href="Esquema de empresa.html">Esquema de empresa.html</a></li>
-                <li><a href="Esquema de notificação.html">Esquema de notificação.html</a></li>
-                <li><a href="Esquema de usuário.html">Esquema de usuário.html</a></li>
-                <li><a href="Esquema de vaga.html">Esquema de vaga.html</a></li>
-            </ul>
-        </li>
-        <li>Rotas
-            <ul class="tree">
-                <li>Rotas de email.html
+                <li class="folder">Esquemas
                     <ul class="tree">
-                        <li><a href="Rotas de email.html">Rotas de email.html</a></li>
+                        <li class="file"><a href="Esquema de aplicação.html">Esquema de aplicação.html</a></li>
+                        <li class="file"><a href="Esquema de empresa.html">Esquema de empresa.html</a></li>
+                        <li class="file"><a href="Esquema de notificação.html">Esquema de notificação.html</a></li>
+                        <li class="file"><a href="Esquema de usuário.html">Esquema de usuário.html</a></li>
+                        <li class="file"><a href="Esquema de vaga.html">Esquema de vaga.html</a></li>
                     </ul>
                 </li>
-                <li>Rotas de empresas.html
+                <li class="folder">Rotas
                     <ul class="tree">
-                        <li><a href="Rotas de empresas.html">Rotas de empresas.html</a></li>
-                    </ul>
-                </li>
-                <li>Rotas de notificação.html
-                    <ul class="tree">
-                        <li><a href="Rotas de notificação.html">Rotas de notificação.html</a></li>
-                    </ul>
-                </li>
-                <li>Rotas de usuário.html
-                    <ul class="tree">
-                        <li><a href="Rotas de usuário.html">Rotas de usuário.html</a></li>
-                    </ul>
-                </li>
-                <li>Rotas de vagas e aplicações.html
-                    <ul class="tree">
-                        <li><a href="Rotas de vagas e aplicações.html">Rotas de vagas e aplicações.html</a></li>
+                        <li class="folder">Email
+                            <ul class="tree">
+                                <li class="file"><a href="Rotas de email.html">Rotas de email.html</a></li>
+                            </ul>
+                        </li>
+                        <li class="folder">Empresas
+                            <ul class="tree">
+                                <li class="file"><a href="Rotas de empresas.html">Rotas de empresas.html</a></li>
+                            </ul>
+                        </li>
+                        <li class="folder">Notificação
+                            <ul class="tree">
+                                <li class="file"><a href="Rotas de notificação.html">Rotas de notificação.html</a></li>
+                            </ul>
+                        </li>
+                        <li class="folder">Usuário
+                            <ul class="tree">
+                                <li class="file"><a href="Rotas de usuário.html">Rotas de usuário.html</a></li>
+                                <li class="file"><a href="Esquema de usuário.html">Esquema de usuário.html</a></li>
+                            </ul>
+                        </li>
+                        <li class="folder">Vagas e Aplicações
+                            <ul class="tree">
+                                <li class="file"><a href="Rotas de vagas e aplicações.html">Rotas de vagas e aplicações.html</a></li>
+                                <li class="file"><a href="Esquema de vaga.html">Esquema de vaga.html</a></li>
+                            </ul>
+                        </li>
                     </ul>
                 </li>
             </ul>
